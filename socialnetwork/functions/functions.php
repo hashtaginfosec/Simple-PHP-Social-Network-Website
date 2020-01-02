@@ -3,7 +3,7 @@
 function connect() {
     static $conn;
     if ($conn === NULL){ 
-        $conn = mysqli_connect('localhost','root','','socialnetwork');
+        $conn = mysqli_connect('localhost','root','password','socialnetwork');
     }
     return $conn;
 }
