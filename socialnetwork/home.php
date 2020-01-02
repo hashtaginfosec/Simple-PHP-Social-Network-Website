@@ -136,8 +136,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') { // Form is Posted
     //Strips all HTML tags
     //$caption = strip_tags($_POST['caption']);
     //Strips <script> tag
-    $caption = str_replace('<script>', '', $_POST['caption']);
-
+    //$caption = str_replace('<script>', '', $_POST['caption']);
+   //filters <script>, <img>, alert()
+    $caption = str_replace(
+            array('<script', '<img', 'alert('),
+            array('','',''),
+        $_POST['caption']
+    );
     if(isset($_POST['public'])) {
         $public = "Y";
     } else {
