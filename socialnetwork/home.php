@@ -131,7 +131,13 @@ $conn = connect();
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') { // Form is Posted
     // Assign Variables
-    $caption = $_POST['caption'];
+    // allows all HTML tags
+    //$caption = $_POST['caption'];
+    //Strips all HTML tags
+    //$caption = strip_tags($_POST['caption']);
+    //Strips <script> tag
+    $caption = str_replace('<script>', '', $_POST['caption']);
+
     if(isset($_POST['public'])) {
         $public = "Y";
     } else {
