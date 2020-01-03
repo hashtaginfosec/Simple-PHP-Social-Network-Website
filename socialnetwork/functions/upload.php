@@ -3,9 +3,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if (isset($_POST['profile']) || isset($_POST['post'])){
         $filename = basename($_FILES["fileUpload"]["name"]);
         $filetype = pathinfo($filename, PATHINFO_EXTENSION); // get file extension and check its type.
-        if($filetype != "png" && $filetype != "jpg" && $filetype!= "jpeg" && $filetype != "gif"){
-            echo 'Only JPG, JPEG, PNG & GIF formats are allowed.';
-        }
+// Disable file extension check
+//        if($filetype != "png" && $filetype != "jpg" && $filetype!= "jpeg" && $filetype != "gif"){
+//            echo 'Only JPG, JPEG, PNG & GIF formats are allowed.';
+//        }
         if(exif_imagetype($_FILES["fileUpload"]["tmp_name"])){ // Check if the file is actually an image.
             if(isset($_POST['profile'])){
                 $success = 0;
