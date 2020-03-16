@@ -1,5 +1,6 @@
 # Social Network Website
 # Forked from https://github.com/iPynch/Simple-PHP-Social-Network-Website. Thanks iPynch.
+# Made vulnerable on purpose. 
 This is a simple social network website designed with core php and of course with the aid of the html, css and core javascript.
 It supports the following functionalities:
 * User registeration
