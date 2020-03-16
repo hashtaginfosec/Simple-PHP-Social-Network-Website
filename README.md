@@ -1,5 +1,5 @@
 # Social Network Website
-
+# Forked from https://github.com/iPynch/Simple-PHP-Social-Network-Website. Thanks iPynch.
 This is a simple social network website designed with core php and of course with the aid of the html, css and core javascript.
 It supports the following functionalities:
 * User registeration
@@ -29,20 +29,8 @@ It supports the following functionalities:
 
 <br>
 
-## To do list:
-* Download the specified font along with website as it is accessed to ensure layout consistency
-* Ability of removing posts of a friend from friendlist
-* Supporting post likes
-* Real time notifications for post likes and friend requests
-* Using search engine instead
-* Full profile edit
-* Using plugins to avoid redirection or refresh of pages when making requests
-* Full protection of data from injections
-
-<br>
-
 ## To install this application:
 * Create a database from DDM.sql file which is found within database folder.
-* For a simple data test, use DML.sql to create a simple instance of data (passwords of users are equivalent to the first names).
+* Import simple data test from DML.sql to create a simple instance of data (passwords of users are equivalent to the first names).
 * You need a webserver (either local or global) to launch .php files. Programs like Xampp, WampServer provides a local webserver that uses MySQL database.
 * copy all other files to your a new folder (folder name is of your choice that is the website name) inside htdocs folder within your program and run.
